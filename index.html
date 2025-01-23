@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .pricing-table {
+            display: flex;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-card h2 {
+            color: #333;
+        }
+
+        .pricing-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .pricing-card .price {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .pricing-card button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pricing-table">
+       
+            <div class="pricing-card">
+                <h2>Starter</h2>
+                <p>Starter purchase dias</p>
+                <p class="price">USD0.99</p>
+                <ul>
+                    <li>✔ 50 dias </li>
+                </ul>
+                <button>Choose Purchase</button>
+            </div>
+
+        
+            <div class="pricing-card">
+                <h2>Advance</h2>
+                <p>More Dias For higher purchase</p>
+                <p class="price">USD2.99</p>
+                <ul>
+                    <li>✔ 150 dias</li>
+                </ul>
+                <button>Choose Advance</button>
+            </div>
+
+
+            <div class="pricing-card">
+                <h2>Weekly Pass</h2>
+                <p>Weekly Dias pass</p>
+                <p class="price">USD1.99</p>
+                <ul>
+                    <li>✔ 220 Dias and more </li>
+                    <li>✔ More dias in 7 days</li>
+                </ul>
+                <button>Choose Premium</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
