@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: rgb(240, 240, 240); /* Light gray background */
+            background-color: rgb(0, 0, 0); /* Black background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -109,6 +109,52 @@
             .pricing-card .price {
                 font-size: 20px;
             }
+
+            .pricing-card p {
+                font-size: 13px;
+            }
+
+            .pricing-card button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="pricing-card">
+            <h2>Starter</h2>
+            <p>Starter purchase plan</p>
+            <p class="price">USD 0.99</p>
+            <ul>
+                <li>✔ 50 Dias</li>
+            </ul>
+            <button>Choose Starter</button>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Advance</h2>
+            <p>More Dias for higher purchase</p>
+            <p class="price">USD 2.99</p>
+            <ul>
+                <li>✔ 150 Dias</li>
+            </ul>
+            <button>Choose Advance</button>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Weekly Pass</h2>
+            <p>Weekly Dias pass</p>
+            <p class="price">USD 1.99</p>
+            <ul>
+                <li>✔ 220 Dias and more</li>
+                <li>✔ More Dias in 7 days</li>
+            </ul>
+            <button>Choose Weekly</button>
+        </div>
+    </div>
+</body>
+</html>
 
             .pricing-card p {
                 font-size: 13px;
