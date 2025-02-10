@@ -16,22 +16,27 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            padding: 10px;
         }
 
         .pricing-table {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .pricing-card {
             flex: 1;
             max-width: 300px;
+            min-width: 250px;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 10px;
             background-color: #fff;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
 
         .pricing-card h2 {
@@ -64,12 +69,31 @@
             cursor: pointer;
         }
 
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .pricing-table {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .pricing-card {
+                max-width: 100%;
+                min-width: auto;
+            }
+
+            .pricing-card .price {
+                font-size: 20px;
+            }
+
+            .pricing-card p {
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="pricing-table">
-       
             <div class="pricing-card">
                 <h2>Starter</h2>
                 <p>Starter purchase dias</p>
@@ -80,7 +104,6 @@
                 <button>Choose Purchase</button>
             </div>
 
-        
             <div class="pricing-card">
                 <h2>Advance</h2>
                 <p>More Dias For higher purchase</p>
@@ -90,7 +113,6 @@
                 </ul>
                 <button>Choose Advance</button>
             </div>
-
 
             <div class="pricing-card">
                 <h2>Weekly Pass</h2>
