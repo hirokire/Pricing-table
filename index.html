@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Table</title>
     <style>
+        /* Global styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        .container {
+            background: rgb(240, 240, 240); /* Light gray background */
+            background: linear-gradient(135deg, rgb(240, 240, 240), rgb(210, 210, 210)); /* Subtle gradient */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             padding: 10px;
         }
 
+        /* Pricing table container */
         .pricing-table {
             display: flex;
             gap: 20px;
@@ -26,6 +26,7 @@
             justify-content: center;
         }
 
+        /* Individual pricing card */
         .pricing-card {
             flex: 1;
             max-width: 300px;
@@ -37,36 +38,62 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Card title style */
         .pricing-card h2 {
             color: #333;
+            font-size: 22px;
+            font-weight: bold;
         }
 
+        /* Card description */
         .pricing-card p {
             font-size: 14px;
             color: #666;
         }
 
+        /* Price style */
         .pricing-card .price {
             font-size: 24px;
             color: #333;
             font-weight: bold;
+            margin: 15px 0;
         }
 
+        /* List items inside the card */
         .pricing-card ul {
             list-style: none;
             padding: 0;
             margin: 20px 0;
+            text-align: left;
         }
 
+        .pricing-card ul li {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Button style */
         .pricing-card button {
-            padding: 10px 20px;
+            padding: 12px 25px;
             background-color: #007BFF;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .pricing-card button:hover {
+            background-color: #0056b3;
         }
 
         /* Responsive styles */
@@ -88,42 +115,44 @@
             .pricing-card p {
                 font-size: 13px;
             }
+
+            .pricing-card button {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="pricing-table">
-            <div class="pricing-card">
-                <h2>Starter</h2>
-                <p>Starter purchase dias</p>
-                <p class="price">USD0.99</p>
-                <ul>
-                    <li>✔ 50 dias </li>
-                </ul>
-                <button>Choose Purchase</button>
-            </div>
+    <div class="pricing-table">
+        <div class="pricing-card">
+            <h2>Starter</h2>
+            <p>Starter purchase plan</p>
+            <p class="price">USD 0.99</p>
+            <ul>
+                <li>✔ 50 Dias</li>
+            </ul>
+            <button>Choose Starter</button>
+        </div>
 
-            <div class="pricing-card">
-                <h2>Advance</h2>
-                <p>More Dias For higher purchase</p>
-                <p class="price">USD2.99</p>
-                <ul>
-                    <li>✔ 150 dias</li>
-                </ul>
-                <button>Choose Advance</button>
-            </div>
+        <div class="pricing-card">
+            <h2>Advance</h2>
+            <p>More Dias for higher purchase</p>
+            <p class="price">USD 2.99</p>
+            <ul>
+                <li>✔ 150 Dias</li>
+            </ul>
+            <button>Choose Advance</button>
+        </div>
 
-            <div class="pricing-card">
-                <h2>Weekly Pass</h2>
-                <p>Weekly Dias pass</p>
-                <p class="price">USD1.99</p>
-                <ul>
-                    <li>✔ 220 Dias and more </li>
-                    <li>✔ More dias in 7 days</li>
-                </ul>
-                <button>Choose Premium</button>
-            </div>
+        <div class="pricing-card">
+            <h2>Weekly Pass</h2>
+            <p>Weekly Dias pass</p>
+            <p class="price">USD 1.99</p>
+            <ul>
+                <li>✔ 220 Dias and more</li>
+                <li>✔ More Dias in 7 days</li>
+            </ul>
+            <button>Choose Weekly</button>
         </div>
     </div>
 </body>
