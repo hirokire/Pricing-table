@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: rgb(0, 0, 0); 
+            background-color: rgb(0, 0, 0); /* Black background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,12 +21,12 @@
             gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
-            max-width: 1200px; 
+            max-width: 1200px; /* Max width for better control */
             width: 100%;
         }
 
         .pricing-card {
-            flex: 1 1 300px;
+            flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 10px;
@@ -87,147 +87,14 @@
             background-color: #0056b3;
         }
 
-        
+        /* Media Queries for smaller screens */
         @media (max-width: 768px) {
             .pricing-table {
-                gap: 15px; 
+                gap: 15px; /* Adjust gap between cards */
             }
 
             .pricing-card {
-                flex: 1 1 100%; 
-            }
-
-            .pricing-card .price {
-                font-size: 20px;
-            }
-
-            .pricing-card p {
-                font-size: 13px;
-            }
-
-            .pricing-card button {
-                font-size: 16px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="pricing-table">
-        <div class="pricing-card">
-            <h2>Starter</h2>
-            <p>Starter purchase plan</p>
-            <p class="price">USD 0.99</p>
-            <ul>
-                <li>✔ 50 Dias</li>
-            </ul>
-            <button>Choose Starter</button>
-        </div>
-
-        <div class="pricing-card">
-            <h2>Advance</h2>
-            <p>More Dias for higher purchase</p>
-            <p class="price">USD 2.99</p>
-            <ul>
-                <li>✔ 150 Dias</li>
-            </ul>
-            <button>Choose Advance</button>
-       <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing Table</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: rgb(0, 0, 0); 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 10px;
-        }
-
-        .pricing-table {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 1200px; 
-            width: 100%;
-        }
-
-        .pricing-card {
-            flex: 1 1 300px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fff;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .pricing-card h2 {
-            color: #333;
-            font-size: 22px;
-        }
-
-        .pricing-card p {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .pricing-card .price {
-            font-size: 24px;
-            color: #333;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-
-        .pricing-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-            text-align: left;
-        }
-
-        .pricing-card ul li {
-            font-size: 14px;
-            color: #555;
-            text-align:center;
-        }
-
-        .pricing-card button {
-            padding: 12px 25px;
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-        }
-
-        .pricing-card button:hover {
-            background-color: #0056b3;
-        }
-
-        
-        @media (max-width: 768px) {
-            .pricing-table {
-                gap: 15px; 
-            }
-
-            .pricing-card {
-                flex: 1 1 100%; 
+                flex: 1 1 100%; /* Full width for each card on small screens */
             }
 
             .pricing-card .price {
@@ -265,21 +132,6 @@
             </ul>
             <button>Choose Advance</button>
         </div>
-
-        <div class="pricing-card">
-            <h2>Weekly Pass</h2>
-            <p>Weekly Dias pass</p>
-            <p class="price">USD 1.99</p>
-            <ul>
-                <li>✔ 220 Dias and more</li>
-                <li>✔ More Dias in 7 days</li>
-            </ul>
-            <button>Choose Weekly</button>
-        </div>
-    </div>
-</body>
-</html>
- </div>
 
         <div class="pricing-card">
             <h2>Weekly Pass</h2>
